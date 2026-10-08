@@ -49,6 +49,11 @@ Run `ufw_configuration.sh` to apply all rules automatically.
 - Rule order matters.
 - Testing is critical for verification.
 
+- ### ⚠️ Real-World Lesson: Self-Inflicted Firewall Lockout
+During this task, I accidentally locked myself out of the internet by applying `DENY OUT` rules for HTTP and HTTPS before installing the necessary tools. This is a common mistake in production environments — if you block outbound traffic before you're done configuring the system, you can't download packages or updates.
+
+**Fix:** I temporarily allowed outbound HTTPS to install required packages, then re-applied the deny rules afterward. This taught me the importance of **firewall change management** and always keeping a way to restore access.
+
 ## Screenshots
 ![UFW Enabled](1-ufw-enabled.png)
 ![UFW Rules](2-ufw-rules.png)
