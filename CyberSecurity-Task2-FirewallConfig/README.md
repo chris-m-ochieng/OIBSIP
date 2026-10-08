@@ -1,5 +1,8 @@
 # Task 2: Basic Firewall Configuration with UFW
 
+## 🎥 Demo Video
+[Watch the demo on YouTube](https://youtu.be/17aGnPxAszM)
+
 ## Objective
 Set up and configure a basic firewall on a Linux system using UFW (Uncomplicated Firewall), applying rules to allow and deny specific types of traffic.
 
